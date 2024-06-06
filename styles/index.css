@@ -1,0 +1,69 @@
+:root{
+    --font-titles: 'Nunito';
+}
+.portada{
+    background: url(/images/bg.png);
+    /* background-color: black; */
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portada > div{
+    padding-top: 25vh;
+    text-align: center;
+    color: #ffffff;
+}
+.portada-texto > p{
+    margin-top: 15px;
+    font-size: 20px;
+}
+.portada-texto > h1{
+    font-size: 40px;
+    font-family: var(--font-titles)
+}
+/*Section Brawlers*/
+.section-brawlers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #101010;
+    color: #ffffff;
+    padding: 50px 50px 50px 200px;
+}
+.section-brawlers > img{
+    width: 250px;
+    
+}
+.section-brawlers > .text-brawlers{
+    padding: 40px;
+}
+.text-brawlers > h2{
+    font-size: 40px;
+    font-family: var(--font-titles);
+}
+.text-brawlers > p{
+    margin-top: 15px;
+    font-size: 20px;
+}
+.section-modos{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding: 50px 50px 50px 350px;
+}
+.section-modos >.text-modos{
+    padding: 40px;
+}   
+.text-modos > h2{
+    font-size: 40px;
+    font-family: var(--font-titles);
+}
+.text-modos > p{
+    margin-top: 15px;
+    font-size: 20px;
+}
