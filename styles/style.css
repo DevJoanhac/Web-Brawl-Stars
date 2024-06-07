@@ -1,6 +1,7 @@
 :root{
     --color-primario1: #FEBF21;
     --color-primario2: #EF1918;
+    --font-titles: 'Nunito';
 }
 *{
     font-family: 'Asap';
@@ -11,6 +12,18 @@
 a{
     text-decoration: none;
 }
+p{
+    line-height: 25px;
+    font-size: 20px;
+}
+h1{
+    font-size: 50px;
+    font-family: var(--font-titles);
+}
+h2{
+    font-size: 40px;
+    font-family: var(--font-titles);
+}
 .nav{
     width: 100%;
     position: fixed;
@@ -19,7 +32,8 @@ a{
     background: #070504;
     padding: 10px;
     /* padding: 10px; */
-    box-shadow: 1px 0 20px #ffffff28;
+    box-shadow: 10px 0 5px #070504;
+    z-index: 999;
 }
 .nav-container{
     display: flex;
@@ -73,7 +87,17 @@ a{
 .nav-container-a:active:before {
     right: 0;
 }
+/*Footer*/
 
+.footer{
+    background-color: #ff5e00;
+    position: relative;
+    bottom: 0;
+    left: 0;
+
+}
+
+/*Buttons*/
 .buttons-section{
     margin-top: 30px;
     background: none;
@@ -87,14 +111,21 @@ a{
 }
 .buttons-section > i{
     position: relative;
-    top: 4px;
-    left: 8px;
+    color: var(--color-primario1);
+    top: 3px;
+    left: 3px;
+    transition: 0.3s all;
+}
+.buttons-section:hover > i{
+    transition: 0.3s all;
+    position: relative;
+    color: #000000;
+    left: 10px;
 }
 .buttons-section:hover{
     background: var(--color-primario1);
-    border: 1px solid var(--color-primario1);
-    color: #101010;
+    color: #000000;
     transition: 0.3s all;
-    cursor: pointer;
-    
+
 }
+

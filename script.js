@@ -2,7 +2,7 @@ document.write(`
 <nav class="nav">
 <div class="nav-container">
     <div>
-        <div class="nav-container-img"><img src="/images/cursor_b.png" alt="Logo de Brawl Stars"></div>
+        <div class="nav-container-img"><img src="/images/logo.png" alt="Logo de Brawl Stars"></div>
     </div>
     <div>
         <a class="nav-container-a" href="/index.html">Inicio</a>

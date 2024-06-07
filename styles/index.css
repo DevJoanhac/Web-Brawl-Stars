@@ -1,54 +1,66 @@
-:root{
-    --font-titles: 'Nunito';
+body{
+    color: #ffffff;
+    background: #101010;
 }
 .portada{
-    background: url(/images/bg.png);
+    background: url(/images/portada.png);
     /* background-color: black; */
     width: 100%;
+    position: relative;
+    top: 50px;
+    z-index: -1;
     height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.section-about{
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
+    padding: 100px 50px 50px 50px;
 }
-.portada > div{
-    padding-top: 25vh;
-    text-align: center;
-    color: #ffffff;
+.section-about > img{
+    width: 50%;
+    position: relative;
+    left: -100px;
+    border-radius: 20px;
+    z-index: -1;
 }
-.portada-texto > p{
+.text-about > p{
     margin-top: 15px;
-    font-size: 20px;
 }
-.portada-texto > h1{
-    font-size: 40px;
-    font-family: var(--font-titles)
+.p-download{
+    font-weight: 700;
 }
 /*Section Brawlers*/
 .section-brawlers{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #101010;
     color: #ffffff;
-    padding: 50px 50px 50px 200px;
+    padding: 50px;
 }
-.section-brawlers > img{
-    width: 250px;
-    
+.img-brawlers{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+.img-brawlers > .img2{
+    width: 25%;
+    height: 20%;
+    position: relative;
+    right: 100px;
+}
+.img-brawlers > .img1{
+    width: 50%;
+    height: 20%;
 }
 .section-brawlers > .text-brawlers{
-    padding: 40px;
-}
-.text-brawlers > h2{
-    font-size: 40px;
-    font-family: var(--font-titles);
+    width: 50%;
 }
 .text-brawlers > p{
     margin-top: 15px;
-    font-size: 20px;
 }
 .section-modos{
     /* display: flex;
@@ -58,12 +70,45 @@
 }
 .section-modos >.text-modos{
     padding: 40px;
-}   
-.text-modos > h2{
-    font-size: 40px;
-    font-family: var(--font-titles);
-}
+} 
 .text-modos > p{
     margin-top: 15px;
-    font-size: 20px;
+}
+.container-buttons-download{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.buttons-download{
+    background: none;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: 0.3s all;
+}
+.download2{
+    position: relative;
+    left: 20px;
+}
+.buttons-download > img{
+    width: 42px;
+    margin-right: 10px;
+}
+.buttons-download > i{
+    font-size: 40px;
+    margin-right: 10px;
+}
+.buttons-download:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 0px #000000, -5px 5px 0px #000000;
+    transform: scale(1.1);
+    transition: 0.3s all;
+}
+.span-download{
+    font-weight: 700;
+    font-size: 24px;
 }
