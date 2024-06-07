@@ -1,7 +1,3 @@
-body{
-    color: #ffffff;
-    background: #101010;
-}
 .portada{
     background: url(/images/portada.png);
     /* background-color: black; */
@@ -14,9 +10,10 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
+
+/*Section About*/
 .section-about{
     display: flex;
-    justify-content: space-around;
     align-items: center;
     padding: 100px 50px 50px 50px;
 }
@@ -33,47 +30,6 @@ body{
 .p-download{
     font-weight: 700;
 }
-/*Section Brawlers*/
-.section-brawlers{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    padding: 50px;
-}
-.img-brawlers{
-    width: 50%;
-    display: flex;
-    justify-content: end;
-}
-.img-brawlers > .img2{
-    width: 25%;
-    height: 20%;
-    position: relative;
-    right: 100px;
-}
-.img-brawlers > .img1{
-    width: 50%;
-    height: 20%;
-}
-.section-brawlers > .text-brawlers{
-    width: 50%;
-}
-.text-brawlers > p{
-    margin-top: 15px;
-}
-.section-modos{
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    padding: 50px 50px 50px 350px;
-}
-.section-modos >.text-modos{
-    padding: 40px;
-} 
-.text-modos > p{
-    margin-top: 15px;
-}
 .container-buttons-download{
     display: flex;
     align-items: center;
@@ -85,7 +41,7 @@ body{
     align-items: center;
     border: 1px solid #ffffff;
     background: #ffffff;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
     transform: scale(1);
     transition: 0.3s all;
@@ -110,5 +66,107 @@ body{
 }
 .span-download{
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
+}
+
+/*Section Brawlers*/
+.section-brawlers{
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+.section-brawlers > .img-brawlers{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.img-brawlers > .img-edgar{
+    width: 30%;
+    height: 20%;
+    position: relative; 
+    left: 120px;
+}
+.img-brawlers > .img-shelly{
+    width: 25%;
+    height: 20%;
+    position: relative;
+    left: -100px;
+    bottom: 15px;
+}
+.img-brawlers > .img-spike{
+    width: 50%;
+    height: 20%;
+    position: relative;
+    z-index: 1;
+}
+.img-brawlers > img{
+    transition: 03s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.img-brawlers > img:hover{
+    transform: scale(1.05);
+    transition: 03s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.section-brawlers > .text-brawlers{
+    width: 50%;
+}
+.text-brawlers > p{
+    margin-top: 15px;
+}
+
+/*Section Modos*/
+.section-modos{
+    display: flex;
+    padding: 50px;
+}
+.section-modos > div{
+    width: 50%;
+}
+.img-modos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-modos > img{
+    width: 30%;
+    height: 60%;
+    transition: 03s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.img-modos > img:hover{
+    transform: scale(1.05);
+    transition: 03s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.img-supervivencia{
+    z-index: 1;
+}
+.img-modos > .img-atraco{
+    position: relative;
+    left: -80px;
+}
+.img-modos > .img-balon{
+    position: relative;
+    left: 50px;
+}
+.text-modos > p{
+    margin-top: 15px;
+}
+
+/*Section Competitivo*/
+.section-competitivo{
+    display: flex;
+    padding: 50px;
+}
+.section-competitivo > div{
+    width: 50%;
+}
+.text-competitivo > p{
+    margin-top: 15px;
+}
+.img-competitivo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-competitivo > img{
+    width: 50%;
+    border-radius: 20px;
 }
