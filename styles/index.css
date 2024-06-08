@@ -1,6 +1,5 @@
 .portada{
-    background: url(images/portada.png);
-    /* background-color: black; */
+    background: url("images/portada.png");
     width: 100%;
     position: relative;
     top: 50px;
