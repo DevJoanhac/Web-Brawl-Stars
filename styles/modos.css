@@ -1,30 +1,46 @@
-body{
-    padding-top: 60px;
-    background-color: #101010;
-    color: aliceblue;
+main{
+    padding-top: 100px;
 }
-h1{
-    text-align: center;
+.inicio{
+    padding: 0 50px;
 }
-li{
-    list-style: none;
-}
-details{
+.modos-juego > .container{
     display: flex;
     align-items: center;
-    justify-content: center;
 }
-summary{
-    list-style: url("/images/cursor_b 1.png");
-
+.modos-juego > .container > .img-modos, .despliegue-modos{
+    max-width: 50%;
 }
-summary::marker{
-
+.modos-juego > .container > .img-modos{
+    padding: 50px 25px 50px 50px;
 }
-.modosimg{
-    width: 500px;
-    height: 300px;
+.img-modos > img{
+    max-width: 100%;
+    border-radius: 20px;
 }
-
-
-
+.modos-juego > .container > .despliegue-modos{
+    padding: 50px 50px 50px 25px;
+}
+.despliegue-modos > details{
+    position: relative;
+    left: 10px;
+}
+.despliegue-modos  > details > summary{
+    font-weight: 700;
+    font-size: 18px;
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+}
+.despliegue-modos  > details > summary::before{
+    content: url(/images/list_style.png);
+    position: relative;
+    top: 9px;
+    right: 10px;
+}
+.despliegue-modos  > details > p{
+    font-size: 18px;
+    position: relative;
+    top: 5px;
+    left: 25px;
+}

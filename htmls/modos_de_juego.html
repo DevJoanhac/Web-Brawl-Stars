@@ -1,44 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Los distintos modos del juego Brawl Stars, de la compañia de videojuegos Supercell">
     <title>Modos de Juego</title>
     <link rel="icon" href="/images/logo.png">
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/modos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.0/uicons-brands/css/uicons-brands.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <script src="/js/script.js"></script>
 </head>
+
 <body>
-    
     <main>
-        <header>
-            <h1>Conoce los Modos de juego disponibles</h1>    
-        </header>
-        <p>Diariamente se actualizan los modos de juego y los mapas disponibles para tener versatilidad y disfrutar de los diferentes modos disponibles</p>
-        <br>
-        <h2>Modos de juego disponibles:</h2>
-        <br>
-        <div class="container">
-            <div><img src="/images/modos.jpg" alt=""></div>
-            <div class="despliegue-modos">
-                <div class="modo"><details><summary>Supervivencia</summary>Jkajkaskdjkas</details></div>
-                <div class="modo"><details><summary>Atrapagemas</summary>Jkajkaskdjkas</details></div>
-                <div class="modo"><details><summary>Caza Estelar</summary>Jkajkaskdjkas</details></div>
-                <div class="modo"><details><summary>Atraco</summary>Jkajkaskdjkas</details></div>
-                <div class="modo"><details><summary>Balon brawl</summary>Jkajkaskdjkas</details></div>
-                <div class="modo"><details><summary>Noqueo</summary>Jkajkaskdjkas</details></div>
+        <!--Acomodar divs a cambio de secciones-->
+        <!--Agregar brs en vez de margin o padding para separar-->
+        <section class="inicio">
+            <header>
+                <h1>Conoce los Modos de Juego</h1>
+            </header>
+            <br><br>
+            <p>
+                Diariamente se actualizan los modos de juego y los mapas disponibles
+                para tener versatilidad y disfrutar de los diferentes modos disponibles
+            </p>
+        </section>
+        <br><br><br>
+        <section class="modos-juego">
+            <div class="container">
+                <div class="img-modos">
+                    <img src="/images/modos.jpg" alt="" />
+                </div>
+                <div class="despliegue-modos">
+                    <h2>Modos de juego disponibles</h2>
+                    <details>
+                        <summary>Supervivencia</summary>
+                        <p>Juega en solitario o de a dos y trata de sobrevivir a esta agitada batalla campal.</p>
+                    </details>
+                    <details>
+                        <summary>Atrapagemas</summary>
+                        <p>Es una batalla 3c3 en la que el objetivo es tener 10 gemas en tu poder antes de que acabe la
+                            partida. Cuando se acabe el tiempo, el equipo que posea una mayor cantidad de gemas gana.
+                            Atrapa las gemas que aparecen en el centro del mapa o arrebátaselas a los rivales
+                            derrotados.</p>
+                    </details>
+                    <details>
+                        <summary>Caza Estelar</summary>
+                        <p>¡Consigue estrellas al derrotar enemigos en este modo 3c3! Ten cuidado: cuantos más brawlers
+                            derrotes, más estrellas ganarás y ¡mayor será la recompensa por tu cabeza! El equipo que
+                            consiga primero 20 estrellas gana. Si se produce un empate, la estrella azul servirá para
+                            desempatar. ¡Asegúrate de que los enemigos no se hacen con ella!</p>
+                    </details>
+                    <details>
+                        <summary>Atraco</summary>
+                        <p>Una contienda 3c3 en la que tendrás que destrozar la caja fuerte del equipo rival antes de
+                            que destruyan la tuya.</p>
+                    </details>
+                    <details>
+                        <summary>Balon brawl</summary>
+                        <p>¡Marca un gol en la portería del equipo rival! Marca 2 goles para ganar. Si una partida tiene
+                            tiempo extra, todos los muros indestructibles se destruirán. ¡A defender se ha dicho!</p>
+                    </details>
+                    <details>
+                        <summary>Noqueo</summary>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, itaque?</p>
+                    </details>
+                </div>
             </div>
-        </div>
-        
+        </section>
     </main>
     <footer class="footer">
         <div class="social">
@@ -64,4 +104,5 @@
         </div>
     </footer>
 </body>
+
 </html>

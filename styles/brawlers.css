@@ -1,0 +1,73 @@
+main{
+    padding: 100px 50px 50px 50px;
+}
+
+.calidades > ul{
+    margin-left: 20px;
+}
+.calidades > ul > li{
+    list-style: none;
+}
+.calidades > ul > li::before{
+    content: url(/images/list_style.png);
+    position: relative;
+    top: 9px;
+    right: 10px;
+}
+
+.card-brawlers{
+    display: flex;
+    justify-content: center;
+}
+.brawlers{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1 rem;
+}
+@media screen and (max-width: 960px) {
+    .brawlers{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 650px) {
+    .brawlers{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/*Cards*/
+
+.card {
+    margin: 20px;
+    min-width: 250px;
+    border-radius: 20px;
+    padding: 5px;
+    max-height: 400px;
+    box-shadow: #ef18185e 0 10px 15px -5px;
+    background: linear-gradient(144deg, var(--color-primario1), var(--color-primario2));
+    transition: 0.3s all cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}  
+.card_content {
+    background: var(--bg);
+    border-radius: 17px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+.card:hover{
+    transform: scale(1.02);
+    transition: 0.3s all cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.card > .card_content > .card-img{
+    display: flex;
+    justify-content: center;
+    border-bottom: 5px solid #202020;
+    padding-bottom: 10px;
+    height: 50%;
+}
+.card > .card_content > .card-text{
+    text-align: center;
+    margin-top: 10px;
+}

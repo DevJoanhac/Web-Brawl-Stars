@@ -4,6 +4,7 @@
     --color-primario2: #ef1918;
     --font-titles: "Nunito";
     --nav-bg: #070504;
+    --bg: #101010;
 }
 /*Estilos Universales*/
 * {
@@ -15,7 +16,7 @@
 
 body{
     color: #ffffff;
-    background: #101010;
+    background: var(--bg);
     display: flex;
     flex-direction: column;
     min-height: 100vh;

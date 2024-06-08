@@ -1,0 +1,54 @@
+main{
+    padding-top: 100px;
+}
+.inicio{
+    padding: 0 50px;
+}
+.competitivo{
+    padding: 0 50px 50px;
+}
+.rankeds{
+    display: flex;
+    align-items: center;
+}
+.img-ranked, .text-ranked{
+    width: 50%;
+}
+.img-ranked{
+    padding: 50px 25px 50px 50px;
+}
+.img-ranked > img{
+    width: 100%;
+}
+.text-ranked{
+    padding: 50px 50px 50px 25px;
+}
+.text-ranked > ul{
+    margin-left: 20px;
+}
+.text-ranked > ul > li{
+    list-style: none;
+}
+.text-ranked > ul > li::before{
+    content: url(/images/list_style.png);
+    position: relative;
+    top: 9px;
+    right: 10px;
+}
+
+.champion-ship{
+    display: flex;
+    align-items: center;
+}
+.img-champion-ship, .text-champion-ship{
+    width: 50%;
+}
+.img-champion-ship{
+    padding: 50px 25px 50px 50px;
+}
+.img-champion-ship > img{
+    width: 100%;
+}
+.text-champion-ship{
+    padding: 50px 50px 50px 25px;
+}
