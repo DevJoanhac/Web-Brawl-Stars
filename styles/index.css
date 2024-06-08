@@ -1,9 +1,9 @@
 .portada{
-    background: url("images/portada.png");
+    background-image: url("images/portada.png");
     width: 100%;
     position: relative;
     top: 50px;
-    z-index: -1;
+    z-index: 0;
     height: 100vh;
     background-size: cover;
     background-position: center;
