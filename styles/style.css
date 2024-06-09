@@ -5,6 +5,7 @@
     --font-titles: "Nunito";
     --nav-bg: #070504;
     --bg: #101010;
+    --text-nav: #ff5e00;
 }
 /*Estilos Universales*/
 * {
@@ -56,28 +57,25 @@ h5 {
 }
 
 /*navegación*/
-.nav {
-    width: 100%;
+.main-nav{
     position: fixed;
-    left: 0;
     top: 0;
-    background: var(--nav-bg);
-    padding: 10px;
-    padding-left: 20px;
-    /* padding: 10px; */
-    box-shadow: 10px 0 5px var(--nav-bg);
-    z-index: 999;
+    z-index: 1;
+    width: 100%;
 }
-
-.nav-container {
-    display: flex;
-    align-items: center;
+.toogle-main-menu{
+    position: absolute;
+    font-size: 30px;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
 }
-
-.logo-nav {
+.logo-nav{
     width: 50px;
-    
-    /* padding: 0px 20px; */
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 1;
 }
 .logo-nav:hover{
     animation: rotation 2s linear infinite;
@@ -89,21 +87,39 @@ h5 {
     to {
         transform: rotate(360deg);
     }
+} 
+.main-menu{
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--nav-bg);
+    transform: translateY(-160%);
+    transition: 0.4s all;
+}
+.main-menu-show{
+    transform: translateY(0%);
+    transition: 0.4s all;
 }
 
-.nav-container-a {
+.logo-nav-container{
+    height: 70px;
+    background-color: var(--nav-bg);
+}
+/*a o links de la navegación*/
+.main-menu > div:first-child{
+    padding-left: 0px;
+}
+.main-menu-a {
     margin: 0px 10px;
     cursor: pointer;
-    color: #ff5e00;
+    color: var(--text-nav);
     font-weight: 600;
     padding: 5px 10px;
     text-decoration: none;
     font-size: 18px;
 }
-.nav-container-a:first-child{
-    margin-left: 20px;
-}
-.nav-container-a {
+.main-menu-a {
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -113,7 +129,7 @@ h5 {
     overflow: hidden;
 }
 
-.nav-container-a:before {
+.main-menu-a::before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -132,10 +148,27 @@ h5 {
     transition-timing-function: ease-out;
 }
 
-.nav-container-a:hover:before,
-.nav-container-a:focus:before,
-.nav-container-a:active:before {
+.main-menu-a:hover::before,
+.main-menu-a:focus::before,
+.main-menu-a:active::before {
     right: 0;
+} 
+@media screen and (min-width: 650px) {
+    .main-menu{
+        flex-direction: row;
+        transform: translateY(0%);
+        padding: 20px;
+    }
+    .toogle-menu{
+        display: none;
+    }
+    .main-menu > div:first-child{
+        padding-left: 60px;
+    }
+    .logo-nav-container{
+        height: 0px;
+        background-color: var(--nav-bg);
+    }
 }
 
 /*Footer*/
@@ -248,7 +281,6 @@ h5 {
 }
 /*Buttons*/
 .buttons-section {
-    margin-top: 30px;
     background: none;
     color: var(--color-primario1);
     border: 1px solid var(--color-primario1);
