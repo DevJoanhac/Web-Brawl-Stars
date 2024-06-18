@@ -29,8 +29,7 @@ main{
 .text-ranked > ul > li{
     list-style: none;
 }
-.text-ranked > ul > li::before{
-    content: url(/images/list_style.png);
+.text-ranked > ul > li > img{
     position: relative;
     top: 9px;
     right: 10px;

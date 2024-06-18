@@ -8,8 +8,7 @@ main{
 .calidades > ul > li{
     list-style: none;
 }
-.calidades > ul > li::before{
-    content: url(/images/list_style.png);
+.calidades > ul > li > img{
     position: relative;
     top: 9px;
     right: 10px;

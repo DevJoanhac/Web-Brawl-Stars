@@ -1,5 +1,4 @@
-.portada{
-    background: url(/images/portada.png);
+.portada > img{
     width: 100%;
     position: relative;
     top: 50px;
@@ -69,31 +68,26 @@
 .section-brawlers{
     display: flex;
     align-items: center;
-    padding: 50px;
+}
+.section-brawlers > .img-brawlers{
+    padding: 50px 25px 50px 50px;
 }
 .section-brawlers > .img-brawlers{
     width: 50%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 400px;
 }
-.img-brawlers > .img-edgar{
-    width: 30%;
-    height: 20%;
-    position: relative; 
-    left: 120px;
+.section-brawlers > .img-brawlers > img{
+    /* width: 100%; */
+    height: 100%;
+    
 }
-.img-brawlers > .img-shelly{
-    width: 25%;
-    height: 20%;
-    position: relative;
-    left: -100px;
-    bottom: 15px;
-}
-.img-brawlers > .img-spike{
-    width: 50%;
-    height: 20%;
-    position: relative;
-    z-index: 1;
+@media screen and (max-width: 950px){
+    .section-brawlers > .img-brawlers > img{
+        height: 80%;
+    }
 }
 .img-brawlers > img{
     transition: 03s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -104,6 +98,41 @@
 }
 .section-brawlers > .text-brawlers{
     width: 50%;
+    padding: 50px 50px 50px 25px;
+}
+@media screen and (max-width: 760px){
+    .section-brawlers{
+        flex-direction: column;
+    }
+    .section-brawlers > .img-brawlers{
+        width: 100%;
+        padding: 0 50px;
+    }
+    .section-brawlers > .text-brawlers{
+        width: 100%;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-brawlers > p{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 560px) {
+    .section-brawlers > .img-brawlers{
+        height: 200px;
+        padding: 25px;
+    }
+    .section-brawlers > .img-brawlers > img{
+        height: 100%;
+    }
+    .section-brawlers > .text-brawlers{
+        padding: 25px;
+    }
+    /* .text-brawlers > h2{
+        font-size: 36px;
+    } */
 }
 
 /*Section Modos*/
@@ -120,8 +149,7 @@
     align-items: center;
 }
 .img-modos > img{
-    width: 30%;
-    height: 60%;
+    width: 80%;
     transition: 03s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .img-modos > img:hover{

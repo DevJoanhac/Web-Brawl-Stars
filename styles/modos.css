@@ -32,8 +32,7 @@ main{
     display: inline-block;
     cursor: pointer;
 }
-.despliegue-modos  > details > summary::before{
-    content: url(/images/list_style.png);
+.despliegue-modos  > details > summary > img{
     position: relative;
     top: 9px;
     right: 10px;

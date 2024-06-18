@@ -37,30 +37,33 @@ h1 {
 }
 
 h2 {
-    font-size: 42px;
+    font-size: 40px;
     font-family: var(--font-titles);
 }
 
 h3 {
-    font-size: 36px;
+    font-size: 30px;
     font-family: var(--font-titles);
 }
 
 h4 {
-    font-size: 26px;
-    font-family: var(--font-titles);
-}
-
-h5 {
     font-size: 20px;
     font-family: var(--font-titles);
 }
 
+h5 {
+    font-size: 15px;
+    font-family: var(--font-titles);
+}
+
+h6{
+    font-size: 10px;
+}
 /*navegación*/
 .main-nav{
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 99;
     width: 100%;
 }
 .toogle-main-menu{
